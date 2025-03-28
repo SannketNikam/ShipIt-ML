@@ -1,4 +1,4 @@
-from mlProject.config.configuration import ConfigurtionManager
+from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.data_transformation import DataTransformation
 from mlProject import logger
 from pathlib import Path
@@ -15,7 +15,7 @@ class DataTransformationPipeline:
                 status = f.read().split(" ")[-1]
 
             if status == "True":
-                config = ConfigurtionManager()
+                config = ConfigurationManager()
                 data_transformation_config = config.get_data_transformation_config()
                 data_transformation = DataTransformation(config = data_transformation_config)
                 data_transformation.train_test_splitting()
