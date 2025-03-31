@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sanket%20Nikam/Programs/Jupyter%20Notebook/Data%20Science/Projects/ShipIt-ML/mlruns/0/af44b64d8d034bddb1c55ee5d04e092d/artifacts
+end_time: 1743430674803
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: af44b64d8d034bddb1c55ee5d04e092d
+run_name: resilient-bat-344
+run_uuid: af44b64d8d034bddb1c55ee5d04e092d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743430666646
+status: 3
+tags: []
+user_id: sanke

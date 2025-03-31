@@ -3,7 +3,7 @@ import urllib.request as request
 import zipfile
 from mlProject import logger
 from mlProject.utils.common import get_size
-from mlProject.entity.config_entity import DataIngestionConfig
+from mlProject.entity.config_entity import (DataIngestionConfig)
 from pathlib import Path
 
 class DataIngestion:
@@ -24,7 +24,7 @@ class DataIngestion:
         """
         zip_file_path: str
         Extracts the zip file into the data directory
-        Function returns none
+        Function returns None
         """
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok = True)

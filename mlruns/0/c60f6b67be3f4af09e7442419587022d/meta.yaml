@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sanket%20Nikam/Programs/Jupyter%20Notebook/Data%20Science/Projects/ShipIt-ML/mlruns/0/c60f6b67be3f4af09e7442419587022d/artifacts
+end_time: 1743430358608
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c60f6b67be3f4af09e7442419587022d
+run_name: learned-sponge-595
+run_uuid: c60f6b67be3f4af09e7442419587022d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743430346950
+status: 3
+tags: []
+user_id: sanke

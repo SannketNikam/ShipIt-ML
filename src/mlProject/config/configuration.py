@@ -61,24 +61,12 @@ class ConfigurationManager:
 
         return data_transformation_config
 
-    def get_data_transformation_config(self) -> DataTransformationConfig:
-        config = self.config.data_transformation
-
-        create_directories([config.root_dir])
-
-        data_transformation_config = DataTransformationConfig(
-            root_dir = config.root_dir,
-            data_path = config.data_path,
-        )
-
-        return data_transformation_config
-
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
         params = self.params.ElasticNet
         schema = self.schema.TARGET_COLUMN
     
-        create_directories([self.config.model_trainer.root_dir])
+        create_directories([config.root_dir])
 
         model_trainer_config = ModelTrainerConfig(
             root_dir = config.root_dir,
@@ -106,7 +94,7 @@ class ConfigurationManager:
             all_params = params,
             metric_file_name = config.metric_file_name,
             target_column = schema.name,
-            mlflow_uri = "https://dagshub.com/SannketNikam/ShipIt-ML.mlflow"
+            mlflow_uri = "https://dagshub.com/SannketNikam/ShipIt-ML.mlflow",
         )
 
         return model_evaluation_config

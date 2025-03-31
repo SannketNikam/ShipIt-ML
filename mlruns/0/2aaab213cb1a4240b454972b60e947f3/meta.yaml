@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sanket%20Nikam/Programs/Jupyter%20Notebook/Data%20Science/Projects/ShipIt-ML/mlruns/0/2aaab213cb1a4240b454972b60e947f3/artifacts
+end_time: 1743430769941
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2aaab213cb1a4240b454972b60e947f3
+run_name: traveling-snipe-631
+run_uuid: 2aaab213cb1a4240b454972b60e947f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743430761840
+status: 3
+tags: []
+user_id: sanke

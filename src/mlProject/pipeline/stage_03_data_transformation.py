@@ -5,7 +5,7 @@ from pathlib import Path
 
 STAGE_NAME = "Data Transformation Stage"
 
-class DataTransformationPipeline:
+class DataTransformationTrainingPipeline:
     def __init__(self):
         pass
 
@@ -23,7 +23,7 @@ class DataTransformationPipeline:
                 raise Exception("Your data schema is not valid!!!")
             
         except Exception as e:
-            raise e
+            print(e)
 
 if __name__ == "__main__":
     try:
@@ -32,4 +32,5 @@ if __name__ == "__main__":
         obj.main()
         logger.info(f">>>>>> Stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
+        logger.exception(e)
         raise e
