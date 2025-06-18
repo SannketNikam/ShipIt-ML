@@ -7,6 +7,7 @@ sdk: docker
 app_file: app.py
 pinned: false
 ---
+
 # ShipIt-ML
 End-to-End Machine Learning Project with MLflow
 
