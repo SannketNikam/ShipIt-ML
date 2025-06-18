@@ -59,7 +59,16 @@ def index():
             return "Something is Wrong!"
     else:
         return render_template("index.html")
+
+# Hugging Face Checking
+@app.route("/hf")
+def huggingface():
+    return """
+    Welcome to the MLOps Flask App on Hugging Face Spaces!\n
+    Hugging Face Route is working!
+    """
     
 if __name__ == "__main__":
     # app.run(host = "0.0.0.0", port = 8080)
-    app.run(host = "0.0.0.0", port = 8080, debug = True)
+    # 7860 is the Hugging Face Spaces default port to listen on
+    app.run(host = "0.0.0.0", port = 7860, debug = True)
