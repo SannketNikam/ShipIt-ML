@@ -1,3 +1,7 @@
+import mlflow
+mlflow.set_tracking_uri("https://dagshub.com/SannketNikam/ShipIt-ML.mlflow")
+mlflow.set_experiment("ShipIt-ML-Experiment")
+
 from mlProject import logger
 from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from mlProject.pipeline.stage_02_data_validation import DataValidationTrainingPipeline

@@ -1,3 +1,7 @@
+import mlflow
+mlflow.set_tracking_uri("https://dagshub.com/SannketNikam/ShipIt-ML.mlflow")
+mlflow.set_experiment("ShipIt-ML-Experiment")
+
 from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.model_trainer import ModelTrainer
 from mlProject import logger
