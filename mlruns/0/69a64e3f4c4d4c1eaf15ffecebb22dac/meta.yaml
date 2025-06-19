@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sanket%20Nikam/Programs/Jupyter%20Notebook/Data%20Science/Projects/ShipIt-ML/mlruns/0/69a64e3f4c4d4c1eaf15ffecebb22dac/artifacts
+end_time: 1750340298641
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 69a64e3f4c4d4c1eaf15ffecebb22dac
+run_name: resilient-fly-376
+run_uuid: 69a64e3f4c4d4c1eaf15ffecebb22dac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750340290863
+status: 3
+tags: []
+user_id: sanke
