@@ -1,0 +1,26 @@
+version: 2
+updates:
+  # Monitor Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"                # Location of requirements.txt
+    schedule:
+      interval: "weekly"          # We can change to "daily" or "monthly" as per preference
+
+    # Auto-ignore the false MLflow alert (vulnerability fixed in >=3.0.0)
+    ignore:
+      - dependency-name: "mlflow"
+        versions: [">=3.0.0"]
+
+    # Optional: limit PRs to avoid spam
+    open-pull-requests-limit: 5
+
+    # Optional: group related updates in a single PR
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+
+  # Monitor GitHub Actions workflow dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
